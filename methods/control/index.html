@@ -1367,38 +1367,38 @@
 <h3 id="2ros2">2.ROS2 安装方法</h3>
 <h4 id="21-humble">2.1 安装步骤（humble 版本，需要联网并进行网络配置）</h4>
 <p>1) 按下“Ctrl+Alt+T”，打开命令行终端，在终端输入“docker pull ros:humble”，下载 ROS2 镜像。</p>
-<p><img alt="安装ROS2步骤1" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤1.png" /></p>
+<p><img alt="安装ROS2步骤1" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A41.png" /></p>
 <p>2) 镜像下载完成后，在终端输入“docker run -it --network=host -d -v=/dev: /dev -v /tmp/.X11-unix:/tmp/.X11-unix --name humble -e DISPLAY=${DISPLAY} --restart=always ros:humble /bin/bash”，运行容器并指定名称为 humble。</p>
-<p><img alt="安装ROS2步骤2" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤2.png" /></p>
+<p><img alt="安装ROS2步骤2" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A42.png" /></p>
 <p>3) 在终端输入“xhost +”,开启 X Server 的访问控制。</p>
-<p><img alt="安装ROS2步骤3" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤3.png" /></p>
+<p><img alt="安装ROS2步骤3" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A43.png" /></p>
 <p>4) 在终端输入“docker ps”查看新创建容器的 ID。</p>
-<p><img alt="安装ROS2步骤4" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤4.png" /></p>
+<p><img alt="安装ROS2步骤4" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A44.png" /></p>
 <p>5) 在终端输入“docker exec -it 55ce /bin/bash”进入容器（容器的 ID 可以简写，只要是该容器唯一标识即可）。</p>
-<p><img alt="安装ROS2步骤5" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤5.png" /></p>
+<p><img alt="安装ROS2步骤5" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A45.png" /></p>
 <p>6) 在终端输入“useradd -m -s /bin/bash ubuntu”，创建一个新用户。</p>
-<p><img alt="安装ROS2步骤6" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤6.png" /></p>
+<p><img alt="安装ROS2步骤6" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A46.png" /></p>
 <p>7) 在终端输入“passwd ubuntu”，设置“ubuntu”的密码，这里我们设置为“ubuntu”输入密码按下之后，需要重新输入一遍密码。</p>
-<p><img alt="安装ROS2步骤7" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤7.png" /></p>
+<p><img alt="安装ROS2步骤7" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A47.png" /></p>
 <p>8) 在终端输入“usermod -aG sudo ubuntu”，将新用户 ubuntu 添加 sudo ，使其具有超级用户权限。</p>
-<p><img alt="安装ROS2步骤8" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤8.png" /></p>
+<p><img alt="安装ROS2步骤8" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A48.png" /></p>
 <p>9) 在终端输入“sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y”，更新可用软件包列表并升级系统上已安装的软件包。</p>
-<p><img alt="安装ROS2步骤9" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤9.png" /></p>
+<p><img alt="安装ROS2步骤9" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A49.png" /></p>
 <p>10) 在终端输入“sudo apt-get install vim -y”，安装 Vim 文本编辑器。</p>
-<p><img alt="安装ROS2步骤10" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤10.png" /></p>
+<p><img alt="安装ROS2步骤10" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A410.png" /></p>
 <p>11) 在终端输入“sudo apt-get install ros-humble-desktop-full -y”，安装 ROS Humble 版本的完整桌面环境。</p>
-<p><img alt="安装ROS2步骤11" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤11.png" /></p>
+<p><img alt="安装ROS2步骤11" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A411.png" /></p>
 <p>12）输入“docker exec -it -u ubuntu -w /home/ubuntu 55ce /bin/bash”指令，进入容器。（注意：55ce 是装有 ROS2 环境的容器 ID）</p>
-<p><img alt="安装ROS2步骤12" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤12.png" /></p>
+<p><img alt="安装ROS2步骤12" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A412.png" /></p>
 <p>13）输入“source /opt/ros/humble/setup.bash”指令，手动配置 ROS2 环境。</p>
-<p><img alt="安装ROS2步骤13" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤13.png" /></p>
+<p><img alt="安装ROS2步骤13" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A413.png" /></p>
 <p>14）每一次打开终端都执行（3）步骤加载工作空间，可以在终端输入“echo “source /opt/ros/humble/setup.bash” &gt;&gt; ~/.bashrc”指令，将该指令写入.bashrc 文件中。</p>
-<p><img alt="安装ROS2步骤14" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤14.png" /></p>
+<p><img alt="安装ROS2步骤14" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A414.png" /></p>
 <p>15）然后输入“source ~/.bashrc”指令，让.bashrc 文件生效。这样就不需要每一次加载工作空间环境。</p>
-<p><img alt="安装ROS2步骤15" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤15.png" /></p>
+<p><img alt="安装ROS2步骤15" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A415.png" /></p>
 <p>16）最后输入“ros2 run turtlesim turtlesim_node”，启动小海龟 GUI 界面，启动成功即说明 ROS2 安装成功。</p>
-<p><img alt="安装ROS2步骤16" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤16.png" /></p>
-<p><img alt="安装ROS2步骤17" src="C:\AI_NB\pythonProject\graduation_design\blog_design\my-blog\docs\assets\images\安装ROS2步骤17.png" /></p>
+<p><img alt="安装ROS2步骤16" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A416.png" /></p>
+<p><img alt="安装ROS2步骤17" src="../../assets/images/%E5%AE%89%E8%A3%85ROS2%E6%AD%A5%E9%AA%A417.png" /></p>
 <h3 id="3ros2">3.ROS2 命令行操作</h3>
 <h4 id="31-ros2">3.1 ROS2 文件系统的组成</h4>
 <p>ROS2 文件是由 Packages 和 Manifests（package.xml）组成。</p>
