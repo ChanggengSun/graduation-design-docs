@@ -1358,7 +1358,7 @@
 <div class="faculty-profile" style="display: flex; align-items: flex-start; gap: 20px; margin: 2em 0;">
     <!-- 左侧：头像照片 -->
     <div class="faculty-photo" style="flex-shrink: 0;">
-        <img src="/assets/images/导师照片.png" alt="陈圣涛教授照片" style="width: 120px; height: 160px; object-fit: cover; border-radius: 4px;">
+        <img src="assets/images/导师照片.png" alt="陈圣涛教授照片" style="width: 120px; height: 160px; object-fit: cover; border-radius: 4px;">
     </div>
     <!-- 右侧：文字信息 -->
     <div class="faculty-info" style="flex-grow: 1;">
@@ -1429,7 +1429,7 @@
 <div class="faculty-profile" style="display: flex; align-items: flex-start; gap: 20px; margin: 2em 0;">
     <!-- 左侧：头像照片 -->
     <div class="faculty-photo" style="flex-shrink: 0;">
-        <img src="/assets/images/孙长庚照片.jpg" alt="孙长庚照片" style="width: 120px; height: 160px; object-fit: cover; border-radius: 4px;">
+        <img src="assets/images/孙长庚照片.jpg" alt="孙长庚照片" style="width: 120px; height: 160px; object-fit: cover; border-radius: 4px;">
     </div>
     <!-- 右侧：文字信息 -->
     <div class="faculty-info" style="flex-grow: 1;">
@@ -1448,11 +1448,11 @@
 <div class="faculty-profile" style="display: flex; align-items: flex-start; gap: 20px; margin: 2em 0;">
     <!-- 左侧：头像照片 -->
     <div class="faculty-photo" style="flex-shrink: 0;">
-        <img src="/assets/images/朱宇辰照片.jpg" alt="朱宇辰照片" style="width: 120px; height: 160px; object-fit: cover; border-radius: 4px;">
+        <img src="assets/images/朱宇辰照片.jpg" alt="朱宇辰照片" style="width: 120px; height: 160px; object-fit: cover; border-radius: 4px;">
     </div>
     <!-- 右侧：文字信息 -->
     <div class="faculty-info" style="flex-grow: 1;">
-        <h3 style="margin-top: 0; margin-bottom: 0.5em;">孙长庚</h3>
+        <h3 style="margin-top: 0; margin-bottom: 0.5em;">朱宇辰</h3>
         <p style="margin: 0.2em 0;"><strong>本科生</strong></p>
         <p style="margin: 0.2em 0;">电话: 18811593810</p>
         <p style="margin: 0.2em 0;">学院: 国际联合学院</p>
@@ -1467,11 +1467,11 @@
 <div class="faculty-profile" style="display: flex; align-items: flex-start; gap: 20px; margin: 2em 0;">
     <!-- 左侧：头像照片 -->
     <div class="faculty-photo" style="flex-shrink: 0;">
-        <img src="/assets/images/田泽锴照片.jpg" alt="田泽锴照片" style="width: 120px; height: 160px; object-fit: cover; border-radius: 4px;">
+        <img src="assets/images/田泽锴照片.jpg" alt="田泽锴照片" style="width: 120px; height: 160px; object-fit: cover; border-radius: 4px;">
     </div>
     <!-- 右侧：文字信息 -->
     <div class="faculty-info" style="flex-grow: 1;">
-        <h3 style="margin-top: 0; margin-bottom: 0.5em;">孙长庚</h3>
+        <h3 style="margin-top: 0; margin-bottom: 0.5em;">田泽锴</h3>
         <p style="margin: 0.2em 0;"><strong>本科生</strong></p>
         <p style="margin: 0.2em 0;">电话: 18811593810</p>
         <p style="margin: 0.2em 0;">学院: 国际联合学院</p>
@@ -1486,17 +1486,12 @@
 <ul>
 <li>到目前为止，我们已经与老师进行了两次交流。在这两次交流中，我们确定了我们的研究方向是基于机器人技术的地下污水管道泄漏检测系统的研究。</li>
 </ul>
-<p><img alt="组会照片" src="/assets/images/组会1.png" /></p>
+<p><img alt="组会照片" src="assets/images/%E7%BB%84%E4%BC%9A1.png" /></p>
 <h2 id="_17">小组分工</h2>
 <p>现阶段，我们计划将该项目分为三个主要任务，并分配给三位团队成员进行实际生产和研究：</p>
 <p>朱宇辰：负责机器人整体机械结构设计以及机械结构强度的数值模拟。计划使用 3D 建模软件 SolidWorks 对结构进行建模，并进行运动模拟分析。随后，打算使用有限元软件如 Fluent 或 COMSOL Multiphysics 对污水管道中的管道机器人进行巡航和运行效果的模拟，并打算在结构方面提出进一步的优化设计方案。</p>
 <p>田泽锴：主要负责机器人控制功能的整合。其具体功能包括运动轨迹规划，主要用于在管道出现分支时确定路径，以及当电池即将耗尽时如何让车辆自动沿搜索路径返回，还包括实时计算检测到的里程并控制摄像头旋转以对管道的不同位置进行检测。</p>
 <p>孙长庚：对于采集到的视频和图像，会进行目标检测，并将残差网络用作卷积神经网络模型的主要骨干结构以进行特征提取。同时，使用faster-rcnn 或 YOLO-V10 对视频或图像进行特征增强，并努力使摄像头能够实时转动以面对出现的裂缝，并根据裂缝的强度对不同区域的不同裂缝强度进行分类。</p>
-<div class="highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
 
 
 
